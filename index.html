@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Exchange</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Currency Exchange</h1>
+        <form id="exchange-form">
+            <label for="from-currency">From:</label>
+            <select id="from-currency"></select>
+
+            <label for="to-currency">To:</label>
+            <select id="to-currency"></select>
+
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" placeholder="Enter amount" required>
+
+            <button type="submit">Convert</button>
+        </form>
+
+        <div class="actions">
+            <button id="save-data">Save</button>
+            <button id="load-data">Open</button>
+            <button id="close-app">Close App</button>
+        </div>
+
+        <div id="result">
+            <h2>Result:</h2>
+            <p id="conversion-result">Select currencies and enter an amount to see the result.</p>
+        </div>
+
+        <div class="extra-functions">
+            <h2>Additional Features</h2>
+        
+            <button id="bulk-convert">Bulk Conversion</button>
+            <button id="historical-rates">Historical Rates</button>
+            <div>
+                <label for="fee">Fee (%):</label>
+                <input type="number" id="fee" placeholder="Enter fee percentage">
+                <button id="convert-with-fee">Convert with Fee</button>
+            </div>
+        </div>
+        
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
